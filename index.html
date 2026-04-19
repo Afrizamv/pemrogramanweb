@@ -2,33 +2,86 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Profil</title>
+    <title>Profil - Afriza Marshal</title>
+    <style>
+        .nav-links a {
+            margin-right: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #3d07ed;
+        }
+        .nav-links a:hover {
+            color: #facc15;
+        }
+        .btn-pesan {
+            background-color: #1b0ddc; /* Warna Madrid */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .btn-pesan:hover {
+            background-color: #6316fb;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
 
-    <section>
-        <h2>Profil Saya</h2>
+    <header>
+        <nav class="nav-links">
+            <a href="nav.html">nav</a>
+            <a href="list.html">list</a>
+            <a href="form.html">form</a>
+            <a href="portfolio.html">portfolio</a>
+        </nav>
+    </header>
 
-        <article>
-     <article>
-         <p>Halo, saya <strong>Afriza Marshal Verdiasta</strong></p>
-         <p>Mahasiswa Informatika</p>
-         <p>Universitas Mercu Buana Yogyakarta</p>
-         <p>KAPAN BARCELONA DAN MANCHESTER UNITED 15 UCL?</p>
-</article>
+    <hr>
 
-        <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" width="120" alt="Foto">
-            <figcaption>Logo Favorit Saya</figcaption>
-        </figure>
+    <main>
+        <section>
+            <h2>Profil Saya</h2>
 
-        <p>Berikut Beberapa Hobi Saya:</p>
+            <article>
+                <p>Halo, saya Afriza Marshal Verdiasta</p>
+                <p>Mahasiswa Informatika</p>
+                <p>Universitas Mercu Buana Yogyakarta</p>
+                
+                <p><mark>KAPAN BARCELONA DAN MANCHESTER UNITED 15 UCL?</mark></p>
+            </article>
 
-        <ul>
-            <li>Melihat Barcelona Ga Lolos Semifinal UCL</li>
-            <li>Melihat Kekalahan Barcelona dan Manchester United</li>
-            <li>Membenci Fans Manchester United</li>
-        </ul>
-    </section>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" width="120" alt="Logo Real Madrid">
+                <figcaption>Logo Favorit Saya</figcaption>
+            </figure>
+
+            <p>Berikut Beberapa Hobi Saya:</p>
+
+            <ul>
+                <li>Melihat Barcelona Ga Lolos Semifinal UCL</li>
+                <li>Melihat Kekalahan Barcelona dan Manchester United</li>
+                <li>Membenci Fans Barcelona dan Manchester United</li>
+            </ul>
+
+            <button class="btn-pesan" onclick="alert('Hala Madriddd!!!')">
+                Klik Untuk Dukung Madrid
+            </button>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Afriza Marshal Verdiasta - Informatics Student</p>
+    </footer>
+
 </body>
 </html>
