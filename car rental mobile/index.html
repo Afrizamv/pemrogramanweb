@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="search">
+        <div class="title">
+            <h1>Rental Mobil</h1>
+            <p>Terpilih Mobil Terbaik Untuk Semua Orang </p>
+            <hr>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="pickup">Rental Location:</label>
+                <select id="pickup" name="pickup">
+                    <option value="">Location</option>
+                    <option value="location1">Yogyakarta</option>
+                    <option value="location2">Sleman</option>
+                    <option value="location3">Kulon Progo</option>
+                    <option value="location4">Bantul</option>
+                    <option value="location5">Gunung Kidul</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Rental Start Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date">Rental End Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </div>
+
+    <div class="car-list">
+        <h2>CAR LIST</h2>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/52/d0/04/52d0046f0a6f9ae4bca556b93076c8df.jpg" alt="Car 1">
+            <h3>Car 1</h3>
+            <p>BMW</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/736x/4f/5f/26/4f5f261c83f4a768e4d0e08fd2d95027.jpg" alt="Car 2">
+            <h3>Car 2</h3>
+            <p>Toyota</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/736x/ff/33/56/ff3356910c55b72fffeba8c04bb2ec44.jpg" alt="Car 2">
+            <h3>Car 3</h3>
+            <p>Honda</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/26/93/af/2693afe379cabbe2db4113e898ec0c78.jpg" alt="Car 2">
+            <h3>Car 4</h3>
+            <p>Suzuki</p>
+        </div>
+    </div>
+</body>
+
+</html>
