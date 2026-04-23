@@ -3,87 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <title>Portofolio - Afriza Marshal Verdiasta</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5ef;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #111, #3b2f1f);
+            color: #d4af37;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d4af37;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #3b2f1f;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #111;
+            color: #d4af37;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        table img {
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #111;
+            color: #d4af37;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #3b2f1f;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            color: #d4af37;
+            padding: 15px;
+        }
+    </style>
 </head>
-<body style="font-family: 'Times New Roman', serif; line-height: 1.6; color: #000; margin: 0; padding: 20px; text-align: left;">
+<body>
 
-    <header style="border-bottom: 2px solid #000; padding-bottom: 20px;">
-        <h1 style="margin-bottom: 5px;">Welcome To My Portfolio</h1>
-        
-        <nav style="margin-bottom: 20px;">
-            <a href="#home" style="margin-right: 15px; color: #000;">Home</a> | 
-            <a href="#about" style="margin: 0 15px; color: #000;">About</a> | 
-            <a href="#contact" style="margin: 0 15px; color: #000;">Contact</a>
-        </nav>
+<header id="home">
+    <h1>Welcome To My Portfolio</h1>
 
-        <img src="foto saya.jpeg" alt="Foto Profil" width="100" style="border: 5px solid #000; padding: 10px; display: block; margin-bottom: 20px;">
-        
-        <h2>Afriza Marshal Verdiasta</h2>
-        <p style="max-width: 800px; text-align: justify;">
-            Hallo Saya Afriza Marshal Verdiasta, Saya Adalah Mahasiswa S1 Informatika Universitas Mercu Buana Yogyakarta. 
-            Fokus studi saya meliputi Jaringan Komputer, Keamanan Jaringan, Manajemen Jaringan, Pemrograman Jaringan, dan Testing Jaringan. 
-            Saya juga aktif mengikuti berbagai acara seminar dan kepanitiaan acara di kampus.
-        </p>
-    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="about" style="padding: 40px 0; border-bottom: 1px solid #000;">
-        <h3 style="text-decoration: underline;">Skills</h3>
-        <ul style="text-align: left; padding-left: 20px;">
-            <li>Model OSI & TCP/IP</li>
-            <li>Manajemen Infrakstruktur</li>
-            <li>Firewall & Akses Kontrol</li>
-            <li>Penetration Testing</li>
-            <li>Scripting</li>
-        </ul>
+    <img src="foto saya.jpeg" alt="Foto Profil" class="profile-img">
 
-        <h3 style="text-decoration: underline;">Project</h3>
-        <ul style="text-align: left; padding-left: 20px;">
-            <li>Membuat Database Toko Sepatu</li>
-            <img src="Pdb Project.png" alt="Project 1" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
+    <h2>Afriza Marshal Verdiasta</h2>
+    <p>
+        Hallo Saya Afriza Marshal Verdiasta, Saya adalah Mahasiswa S1 Informatika
+        Universitas Mercu Buana Yogyakarta, Saya Mahasiswa Informatika Belajar dan Berfokus Pada Jaringan Komputer, Keamanan Jaringan, Manajemen Jaringan, Pemrograman Jaringan, Testing Jaringan, Saya Juga Mengikuti Berbagai Acara Seminar, dan Saya Juga Mengikuti Berbagai Kepanitian di Kampus, Saya Juga Termasuk Anggota BEM FTI 2026.
+    </p>
+</header>
 
-        <h3 style="text-decoration: underline; margin-top: 40px;">Certificate</h3>
-        <div style="text-align: left;">
-            <li>Certificate 2nd ICISIT 2025</li>
-            <img src="Sertif ICISIT.jpeg" alt="Cert 1" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate Koor Perkap 2025</li>
-            <img src="Sertif Koor Perkap.jpeg" alt="Cert 2" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate LDKO FTI 2025</li>
-            <img src="Sertif LDKO.jpeg" alt="Cert 3" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate LO Pkkmb 2025</li>
-            <img src="Sertif LO Pkkmb.jpeg" alt="Cert 4" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate Next Gen AI 2025</li>
-            <img src="Sertif next gen AI.jpeg" alt="Cert 5" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate Pemuda Nasional 2026</li>
-            <img src="Sertif Pemuda Nasional.jpeg" alt="Cert 6" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            <li>Certificate PAB Jawa Timur 2026</li>
-            <img src="Serti PAB Jatim.jpeg" alt="Cert 6" width="180" style="border: 1px solid #000; margin-right: 10px; margin-bottom: 10px;">
-            
-        </div>
+<div class="container">
+
+    <section id="about">
+
+        <h3>Skills</h3>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Skills</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Model OSI & TCP/IP</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Manajemen Infrastruktur</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Firewall & Akses Kontrol</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Penetration Testing</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Scripting</td>
+            </tr>
+        </table>
+
+        <h3>Project</h3>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama Project</th>
+                <th>Gambar</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Membuat Database Toko Sepatu</td>
+                <td>
+                    <img src="Pdb Project.png" alt="Project" width="150">
+                </td>
+            </tr>
+        </table>
+
+        <h3>Certificate</h3>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama Sertifikat</th>
+                <th>Dokumentasi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ICISIT 2025</td>
+                <td><img src="Sertif ICISIT.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Koor Perkap 2025</td>
+                <td><img src="Sertif Koor Perkap.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>LDKO FTI 2025</td>
+                <td><img src="Sertif LDKO.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>LO PKKMB 2025</td>
+                <td><img src="Sertif LO Pkkmb.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Next Gen AI 2025</td>
+                <td><img src="Sertif next gen AI.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Pemuda Nasional 2026</td>
+                <td><img src="Sertif Pemuda Nasional.jpeg" width="120"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>PAB Jawa Timur 2026</td>
+                <td><img src="Serti PAB Jatim.jpeg" width="120"></td>
+            </tr>
+        </table>
+
     </section>
 
-    <section id="contact" style="padding: 40px 0;">
-        <h3 style="text-decoration: underline;">Contact</h3>
-        <form action="#" method="post" style="max-width: 500px; text-align: left;">
-            <div style="margin-bottom: 15px;">
-                <label>Name:</label><br>
-                <input type="text" name="name" style="width: 100%; border: 1px solid #000; padding: 8px;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label>Email:</label><br>
-                <input type="email" name="email" style="width: 100%; border: 1px solid #000; padding: 8px;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label>Message:</label><br>
-                <textarea name="message" rows="4" style="width: 100%; border: 1px solid #000; padding: 8px; resize: none;"></textarea>
-            </div>
-            <button type="submit" style="background: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold;">
-                SUBMIT
-            </button>
+    <section id="contact">
+        <h3>Contact</h3>
+        <form action="#" method="post">
+            <label>Name:</label>
+            <input type="text" name="name">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Message:</label>
+            <textarea name="message" rows="4"></textarea>
+
+            <br><br>
+            <button type="submit">SUBMIT</button>
         </form>
     </section>
 
-    <footer style="font-size: 15px; margin-top: 10px;">
-        <p>2026 Afriza Marshal Verdiasta</p>
-    </footer>
+</div>
+
+<footer>
+    <p>© 2026 Afriza Marshal Verdiasta</p>
+</footer>
 
 </body>
 </html>
