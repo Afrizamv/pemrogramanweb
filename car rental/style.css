@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -16,18 +19,22 @@ body {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("https://i.pinimg.com/1200x/66/0e/ca/660eca65c7490adbf8cb41939bd72bbc.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    color: white;
     display: flex;
     flex-direction: column;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 80px;
+    padding: 20px 80px;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -52,7 +59,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -50px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -73,31 +80,25 @@ body {
     text-decoration: none;
 }
 
-.booking h2,
-.cars h2,
-.services h2,
-.testimonials h2,
-.contact h2 {
-    margin-bottom: 25px;
-    font-size: 34px;
-    text-align: center;
+section h2 {
     color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 34px;
 }
 
 .booking {
     background: #2a2a2a;
-    color: white;
     width: 90%;
-    margin: -40px auto 50px;
-    padding: 25px;
+    margin: 40px auto;
+    padding: 30px;
     border-radius: 15px;
-    text-align: center;
 }
 
 .booking-form {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -106,13 +107,12 @@ body {
 .booking-form button {
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: none;
 }
 
 .booking-form button {
     background: orange;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
@@ -120,16 +120,15 @@ body {
 .services,
 .testimonials,
 .contact {
-    padding: 40px 60px;
-    text-align: center;
+    padding: 60px;
 }
 
 .car-container,
 .service-container,
 .testimonial-container {
     display: flex;
-    gap: 25px;
     justify-content: center;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
@@ -141,7 +140,7 @@ body {
     width: 280px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -154,8 +153,8 @@ body {
 .car-card img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .car-card h3 {
@@ -178,17 +177,35 @@ body {
 }
 
 .contact {
-    background: #1c1b1c;
-    color: white;
+    text-align: center;
 }
 
 .contact p {
     margin: 10px 0;
 }
 
+
+.customer-service {
+    margin-top: 30px;
+    background: #2a2a2a;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-service h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.customer-service p {
+    margin: 8px 0;
+}
+
 footer {
     background: #111;
-    color: white;
     text-align: center;
     padding: 15px;
 }
