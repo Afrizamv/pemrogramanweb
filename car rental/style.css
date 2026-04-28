@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1c1b1c;
+    color: white;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://i.pinimg.com/1200x/66/0e/ca/660eca65c7490adbf8cb41939bd72bbc.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.booking h2,
+.cars h2,
+.services h2,
+.testimonials h2,
+.contact h2 {
+    margin-bottom: 25px;
+    font-size: 34px;
+    text-align: center;
+    color: white;
+}
+
+.booking {
+    background: #2a2a2a;
+    color: white;
+    width: 90%;
+    margin: -40px auto 50px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.booking-form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.booking-form button {
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cars,
+.services,
+.testimonials,
+.contact {
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.car-container,
+.service-container,
+.testimonial-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.car-card,
+.service-box,
+.testimonial {
+    background: white;
+    color: black;
+    width: 280px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.car-card:hover,
+.service-box:hover,
+.testimonial:hover {
+    transform: translateY(-8px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-card h3 {
+    margin-top: 15px;
+}
+
+.car-card p {
+    color: orange;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.car-card button {
+    background: orange;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact {
+    background: #1c1b1c;
+    color: white;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
