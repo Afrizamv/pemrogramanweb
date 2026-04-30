@@ -1,0 +1,245 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #0f172a, #1e3a8a);
+    color: white;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(30,58,138,0.7)),
+    url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #93c5fd;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+.search-box {
+    margin-top: 25px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 280px;
+    border: none;
+    border-radius: 6px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+section {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #93c5fd;
+    margin-bottom: 30px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.75);
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(96,165,250,0.3);
+}
+
+.card h3 {
+    color: #60a5fa;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #334155;
+    line-height: 1.6;
+}
+
+.card ul li strong {
+    color: #93c5fd;
+}
+
+
+.services {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+table {
+    width: 85%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+table th,
+table td {
+    border: 1px solid #334155;
+    padding: 14px;
+}
+
+table th {
+    background: #1e40af;
+}
+
+table tr:hover {
+    background: rgba(59,130,246,0.2);
+}
+
+
+.contact {
+    background: rgba(0, 0, 0, 0.20);
+    padding: 70px 40px 100px 40px;
+}
+
+.contact form {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.contact button {
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: black;
+    color: #93c5fd;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
