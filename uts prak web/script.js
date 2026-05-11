@@ -38,25 +38,19 @@ subscribeForm.addEventListener("submit", (e) => {
 });
 
 
-const toast =
-document.getElementById("toast");
+document.addEventListener("DOMContentLoaded", () => {
+    const toast = document.getElementById("toast");
+    const toastMsg = document.getElementById("toast-msg");
 
-const toastMsg =
-document.getElementById("toast-msg");
+    window.showToast = function(message){
+        toastMsg.innerText = message;
+        toast.classList.remove("hidden");
 
-function showToast(message){
-
-    toastMsg.innerText = message;
-
-    toast.classList.remove("hidden");
-
-    setTimeout(() => {
-
-        toast.classList.add("hidden");
-
-    }, 3000);
-
-}
+        setTimeout(() => {
+            toast.classList.add("hidden");
+        }, 3000);
+    }
+});
 
 
 const fadeElements =
