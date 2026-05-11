@@ -109,7 +109,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-document.title = "NexTech - Premium Gadget Store";
+document.title = "Voltik Store - Premium Gadget & Perangkat Elektronik Store";
 
 document.addEventListener(
 "mousemove",
@@ -134,3 +134,4 @@ document.addEventListener(
 
     });
 });
+
